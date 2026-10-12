@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: classnest
+      POSTGRES_PASSWORD: classnest_dev_password
+      POSTGRES_DB: classnest
+    ports:
+      - "5432:5432"
+    volumes:
+      - classnest_pg:/var/lib/postgresql/data
+volumes:
+  classnest_pg:
