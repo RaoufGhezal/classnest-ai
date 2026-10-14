@@ -1,6 +1,6 @@
 # ClassNest AI starter
 
-Minimal monorepo: Next.js frontend, NestJS API (Google OAuth + JWT cookie + TypeORM/PostgreSQL), and FastAPI document-processing service.
+Minimal monorepo: Next.js frontend with Tailwind CSS, NestJS API (Google OAuth + JWT cookie + TypeORM/PostgreSQL), and FastAPI document-processing service.
 
 ## Requirements
 
@@ -68,4 +68,4 @@ The FastAPI service exposes `POST /process` for a file and extracts text from te
 - Add file size/type validation, rate limits, account deletion, logging, and tests.
 - Do not assume Google login gives Gemini/API access. AI provider credentials are separate.
 - This starter provides the authentication foundation; application features can be added separately.
-"# classnest-ai" 
+  "# classnest-ai"
